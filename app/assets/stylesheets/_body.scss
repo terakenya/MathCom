@@ -1,0 +1,99 @@
+.main{
+  // background-color:#EEEEEE;
+  height:100%;
+  width:100%;
+  // padding-top:100px;
+  // padding-right:45px;
+  // padding-left:45px;
+}
+
+.box-container{
+  padding-top:110px;
+  padding-right:45px;
+  padding-left:45px;
+}
+
+.sidebar{
+  width:270px;
+  float:left;
+  // background-color:green;
+  // padding-top:100px;
+}
+
+.sidebar-container{
+  // background-color:green;
+  width:270px;
+  border-radius:8px;
+}
+
+.tag-list{
+  padding:15px 20px;
+  color:gray;
+  border: 2px solid gray;
+  border-radius:8px;
+  margin-bottom:5px;
+  background-color:#8EF1FF;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.question{
+  padding:20px 90px;
+  color:black;
+  border: 2px solid yellow;
+  background-color:#008080;
+  margin-bottom:40px;
+  text-aling:center;
+  font-weight:bold;
+  color:white;
+  font-size:17px;
+  margin-top:15px;
+  cursor:pointer;
+}
+
+.articles{
+  float:right;
+}
+
+
+.articles-container{
+  width:890px;
+  // background-color:yellow;
+}
+
+.article{
+  padding:0px 20px;
+  color:black;
+  border: 1px solid gray;
+  margin-top:6px;
+  background-color:#EEEEEE;
+}
+
+.article-title{
+  padding-top:5px;
+  padding-bottom:8px;
+  border-bottom: 1px solid gray;
+  font-weight:bold;
+}
+
+  .article-description{
+    padding-top:5px;
+    padding-bottom:8px;
+    margin-right:100px;
+  }
+
+  .article-posttime{
+    padding-top:5px;
+    padding-bottom:8px;
+    font-size:5px;
+  }
+
+  .article-tags{
+    margin-bottom:7px;
+  }
+
+.article-tag{
+  font-size:9px;
+  margin-right:5px;
+}
+

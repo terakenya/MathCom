@@ -1,0 +1,61 @@
+.header{
+  background-color: #33CCFF;
+  height:80px;
+  width:100%;
+  position:fixed;
+  opacity: 0.8;
+  .header-container{
+    padding-left:50px;
+    margin-top:17px;
+    padding-right: 50px;
+    .header-title{
+      height:50px;
+      font-size:30px;
+      font-weight:bold;
+      letter-spacing:6px;
+      color:white;
+      cursor:pointer;
+    }
+    .header-search{
+      float:right;
+    }
+    .megane{
+      float:right;
+      width:60px;
+      height:50px;
+    }
+  }
+}
+
+ul li{
+display: inline;
+}
+
+.nav-search-logo{
+  margin-left:820px;
+  padding: 10px;
+  color:white;
+  font-size:18px;
+  margin-right:10px;
+  cursor:pointer;
+}
+
+.nav-post{
+  color:white;
+  font-size:18px;
+  padding: 10px;
+  cursor:pointer;
+  // border: 1px;
+  // border-radius:7px;
+}
+
+
+
+
+
+
+
+
+
+
+
