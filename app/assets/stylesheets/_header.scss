@@ -15,6 +15,8 @@
       letter-spacing:6px;
       color:white;
       cursor:pointer;
+      position:absolute;
+      top:18px;
     }
     .header-search{
       float:right;
@@ -32,29 +34,75 @@ display: inline;
 }
 
 .nav-search-logo{
-  margin-left:820px;
-  padding: 10px;
+  margin-left:890px;
   color:white;
   font-size:18px;
-  margin-right:10px;
   cursor:pointer;
 }
 
 .nav-post{
   color:white;
-  font-size:18px;
-  padding: 10px;
+  font-size:19.5px;
   cursor:pointer;
-  // border: 1px;
-  // border-radius:7px;
+  line-height:15px;
+  position:absolute;
+  top:33px;
+  right:148px;
+  font-weight:bold;
+}
+
+.nav-post:hover{
+  color:#FFBEDA;
+}
+
+.searchicon{
+width:40px;
+height:41px;
+margin-right:4px;
+margin-top:1px;
+}
+
+.nav-search-word{
+  color:white;
+  font-size:19.5px;
+  position:absolute;
+  top:26px;
+  font-weight:bold;
+  cursor: pointer;
+}
+
+.nav-search-word:hover{
+  color:#FFBEDA;
+}
+
+%li.nav-mypage{
+  color:black;
+  font-size:18px;
+}
+
+.smile{
+  width:33px;
+  height:33px;
+  position:absolute;
+  right:89px;
+  top:23.5px;
+  cursor:pointer;
 }
 
 
+.searchbox{
+  width:245px;
+  height:40px;
+  position:absolute;
+  top:-5px;
+  right:45px;
+  background-color:#f7f9f9;
+  border-radius:50px;
+  display:none;
+  // opacity:0.5;
+  font-size:13px;
 
-
-
-
-
+}
 
 
 

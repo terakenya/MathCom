@@ -1,0 +1,42 @@
+.mypage-menu{
+  width:200px;
+  height:214px;
+  background-color:white;
+  position:absolute;
+  top:72px;
+  right:50px;
+  opacity:1;
+  border: 1px solid gray;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 0 1px rgba(0,0,0,0.35);
+  display:none;
+}
+
+.menu-list{
+  padding:10.5px 0;
+  padding-left:20px;
+  font-size:14px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-weight:bold;
+  color:gray;
+  cursor:pointer;
+  z-index:2;
+}
+
+.menu-list:hover{
+  background-color:gray;
+  color:white;
+}
+
+.mypage-menu:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -13px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  box-shadow: 1px 1px 1px -1px rgba(0,0,0,0.8);
+  transform: rotate(225deg) translate(-5px, -5px);
+  left: 140px;
+  z-index:0;
+}

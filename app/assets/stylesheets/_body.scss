@@ -16,13 +16,14 @@
 .sidebar{
   width:270px;
   float:left;
+  margin-left:20px;
   // background-color:green;
   // padding-top:100px;
 }
 
 .sidebar-container{
   // background-color:green;
-  width:270px;
+  width:225px;
   border-radius:8px;
 }
 
@@ -32,32 +33,38 @@
   border: 2px solid gray;
   border-radius:8px;
   margin-bottom:5px;
-  background-color:#8EF1FF;
+  background-color:#AAE087;
   font-weight:bold;
   cursor:pointer;
+  text-align:10px;
+}
+
+.tag-list:hover{
+  background-color:#B7D968;
 }
 
 .question{
-  padding:20px 90px;
-  color:black;
-  border: 2px solid yellow;
-  background-color:#008080;
+  padding:20px 70px;
+  border: 2px solid #526182;
+  background-color:#466FA0;
   margin-bottom:40px;
-  text-aling:center;
   font-weight:bold;
   color:white;
   font-size:17px;
   margin-top:15px;
   cursor:pointer;
+  border-radius:8px;
 }
+
 
 .articles{
   float:right;
+  margin-right:20px;
 }
 
 
 .articles-container{
-  width:890px;
+  width:880px;
   // background-color:yellow;
 }
 
@@ -74,12 +81,15 @@
   padding-bottom:8px;
   border-bottom: 1px solid gray;
   font-weight:bold;
+  margin-top:5px;
+  cursor:pointer;
 }
 
   .article-description{
     padding-top:5px;
     padding-bottom:8px;
     margin-right:100px;
+    cursor:pointer;
   }
 
   .article-posttime{
@@ -90,10 +100,27 @@
 
   .article-tags{
     margin-bottom:7px;
+
   }
 
 .article-tag{
   font-size:9px;
   margin-right:5px;
+  background-color:white;
+  padding:5px;
+  border-radius:8px;
+  cursor:pointer;
 }
 
+.wolf{
+  height:30px;
+  width:30px;
+}
+
+.hakase{
+  height:31px;
+  width:35px;
+  position:absolute;
+  top:141px;
+  left:95px;
+}

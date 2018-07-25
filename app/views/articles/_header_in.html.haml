@@ -4,8 +4,24 @@
       %li.header-title
         Smaths!
       %li.nav-search-logo
-        探す
+        = image_tag 'search.png',class:"searchicon"
+        %li.nav-search-word
+          探す
+          .searchbox
+            / %input{class: "searchbox",placeholder:'微分 高２',type: "text",id: "searchbox"}
       %li.nav-post
         質問する
-
+      %li.nav-mypage
+        = image_tag "smile.png",class:'smile'
+        .mypage-menu
+          .menu-list
+            マイページ
+          .menu-list
+            あなたがした質問
+          .menu-list
+            あなたがした回答
+          .menu-list
+            アカウント設定
+          .menu-list
+            ログアウト
 
