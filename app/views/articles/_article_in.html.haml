@@ -5,91 +5,16 @@
         .question
           =image_tag 'hakase.png',class:"hakase"
           質問する
-        .tag-list
+        .tag-list#middleschool
           = image_tag 'tanuki.png',class:"wolf"
           中学生数学
-        .tag-list
+        .tag-list#highschool
           = image_tag 'wolf.png',class:"wolf"
           高校生数学
-        .tag-list
+        .tag-list#university
           = image_tag 'cow.png',class:"wolf"
           大学生数学
-
-
+    //= render "articles"
     .articles
       .articles-container
-        .article
-          .article-title
-            この図形の解き方を教えてください
-          .article-description
-            高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。
-          .article-posttime
-            2018/07/24(Tuesday)
-          .article-tags
-            %ul
-              %li.article-tag
-                高2
-              %li.article-tag
-                三角関数
-              %li.article-tag
-                グラフ
-        .article
-          .article-title
-            この図形の解き方を教えてください
-          .article-description
-            高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。
-          .article-posttime
-            2018/07/24(Tuesday)
-          .article-tags
-            %ul
-              %li.article-tag
-                高2
-              %li.article-tag
-                三角関数
-              %li.article-tag
-                グラフ
-        .article
-          .article-title
-            この図形の解き方を教えてください
-          .article-description
-            高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。
-          .article-posttime
-            2018/07/24(Tuesday)
-          .article-tags
-            %ul
-              %li.article-tag
-                高2
-              %li.article-tag
-                三角関数
-              %li.article-tag
-                グラフ
-        .article
-          .article-title
-            この図形の解き方を教えてください
-          .article-description
-            高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。
-          .article-posttime
-            2018/07/24(Tuesday)
-          .article-tags
-            %ul
-              %li.article-tag
-                高2
-              %li.article-tag
-                三角関数
-              %li.article-tag
-                グラフ
-        .article
-          .article-title
-            この図形の解き方を教えてください
-          .article-description
-            高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。
-          .article-posttime
-            2018/07/24(Tuesday)
-          .article-tags
-            %ul
-              %li.article-tag
-                高2
-              %li.article-tag
-                三角関数
-              %li.article-tag
-                グラフ
+        = render partial: 'question', collection: @questions
