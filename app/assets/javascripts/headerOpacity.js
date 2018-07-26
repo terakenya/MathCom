@@ -11,7 +11,7 @@ $(function() {
    function (e) {
     var scrollTop = $(window).scrollTop();
     if(scrollTop != 0){
-     $('.header').stop().animate({'opacity':'1'},400);
+     $('.header').stop().animate({'opacity':'1'},280);
     }
    },
    function (e) {
