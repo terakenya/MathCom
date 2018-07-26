@@ -1,4 +1,10 @@
+a{
+  text-decoration:none;
+}
 
+a:visited {
+  color:inherit;
+  }
 
 .userpage-body{
   width:100%;
@@ -24,7 +30,6 @@
 .userpage-icon-container{
   height:250px;
   width:250px;
-  background-color:yellow;
 }
 
 .userpage-icon{
@@ -71,7 +76,7 @@
   width:788px;
   height:38px;
   padding-top:11px;
-  padding-left:30px;
+  padding-left:24px;
   font-size:18.5px;
   font-weight:bold;
   color:black;
