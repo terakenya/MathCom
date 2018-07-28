@@ -55,3 +55,4 @@ group :development, :test do
   gem 'pry-doc'
 end
 gem 'devise'
+gem 'kaminari'
