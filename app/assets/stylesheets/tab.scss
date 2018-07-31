@@ -1,0 +1,9 @@
+.tabs .is_active {
+  /* 何かタブを変更する設定 */
+}
+.tab-content {
+  display: none;
+}
+.tab-content.is_show {
+  display: block;
+}
