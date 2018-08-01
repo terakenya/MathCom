@@ -1,9 +1,9 @@
-=render "articles/header_in"
+= render "articles/header_in"
 .userpage-body
   .userpage-container
     .userpage-sidebar
       .userpage-icon-container
-        %img.userpage-icon{:alt => "", "data-src" => "https://avatars2.githubusercontent.com/u/39428320?v=4", :src => "https://avatars2.githubusercontent.com/u/39428320?v=4", :style => "", :title => ""}/
+        = image_tag 'samplehaibara.png',class:"userpage-icon"
       .userpage-userinfo
         .userpage-username
           aritomi
@@ -18,41 +18,15 @@
       .userpage-userlogs
         .userpage-userlogs-details
           .userpage-userlogs-tabs
-            質問した投稿
+            %a.home-tab{:href => "#view1"} 質問した投稿
           .userpage-userlogs-tabs
-            回答した投稿
+            %a.magazine-tab{:href => "#view2"} 回答した投稿
           .userpage-userlogs-tabs
-            いいねした投稿
-        .user-page-userlogs-questions
-          .user-page-userlogs-questions-container
-            .user-page-userlogs-usericon-container
-              %img.user-page-userlogs-usericon{:alt => "", "data-src" => "https://avatars2.githubusercontent.com/u/39428320?v=4", :src => "https://avatars2.githubusercontent.com/u/39428320?v=4", :style => "", :title => ""}/
-            .user-page-userlogs-username
-              Aritomiさんが 2018/07/26に投稿
-            .user-page-userlogs-title
-              三角関数のグラフについて三角関数のグラフについて三角関数のグラフ三角関数のグラフについて三角関数のグラフ
-        .user-page-userlogs-questions
-          .user-page-userlogs-questions-container
-            .user-page-userlogs-usericon-container
-              %img.user-page-userlogs-usericon{:alt => "", "data-src" => "https://avatars2.githubusercontent.com/u/39428320?v=4", :src => "https://avatars2.githubusercontent.com/u/39428320?v=4", :style => "", :title => ""}/
-            .user-page-userlogs-username
-              Aritomiさんが 2018/07/26に投稿
-            .user-page-userlogs-title
-              三角関数のグラフについて三角関数のグラフについて三角関数のグラフ三角関数のグラフについて三角関数のグラフ
-        .user-page-userlogs-questions
-          .user-page-userlogs-questions-container
-            .user-page-userlogs-usericon-container
-              %img.user-page-userlogs-usericon{:alt => "", "data-src" => "https://avatars2.githubusercontent.com/u/39428320?v=4", :src => "https://avatars2.githubusercontent.com/u/39428320?v=4", :style => "", :title => ""}/
-            .user-page-userlogs-username
-              Aritomiさんが 2018/07/26に投稿
-            .user-page-userlogs-title
-              三角関数のグラフについて三角関数のグラフについて三角関数のグラフ三角関数のグラフについて三角関数のグラフ
-        .user-page-userlogs-questions
-          .user-page-userlogs-questions-container
-            .user-page-userlogs-usericon-container
-              %img.user-page-userlogs-usericon{:alt => "", "data-src" => "https://avatars2.githubusercontent.com/u/39428320?v=4", :src => "https://avatars2.githubusercontent.com/u/39428320?v=4", :style => "", :title => ""}/
-            .user-page-userlogs-username
-              Aritomiさんが 2018/07/26に投稿
-            .user-page-userlogs-title
-              三角関数のグラフについて三角関数のグラフについて三角関数のグラフ三角関数のグラフについて三角関数のグラフ
-=render "articles/footer"
+            %a.magazine-tab{:href => "#view2"} いいねした投稿
+      #view1.tab-content
+        = render "didquestion"
+      #view2.tab-content
+        = render "didanswer"
+      #view3.tab-content
+        = render "didlike"
+= render "articles/footer"
