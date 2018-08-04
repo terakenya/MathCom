@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'articles#index'
   get 'users' => 'users#index'
   get 'articles' => 'articles#index'
+  get 'articles/new' => 'articles#new'
 end

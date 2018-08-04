@@ -6,4 +6,7 @@ class ArticlesController < ApplicationController
       @questions = Question.where(generation: params[:generation]).page(params[:page]).per(2)
     end
   end
+  def new
+
+  end
 end
