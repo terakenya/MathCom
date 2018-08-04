@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   get 'users' => 'users#index'
   get 'articles' => 'articles#index'
   get 'articles/new' => 'articles#new'
+  devise_scope :user do
+  get '/users/sign_out' => 'devise/sessions#destroy'
+  end
 end
