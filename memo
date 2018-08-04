@@ -4,3 +4,6 @@ VALUES
  (5,'この図形の解き方を教えてください','高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。高校2年生で、三角関数の図形の問題を解いています。','中学生');
 
 rails generate model question
+
+
+rails g migration AddPhotoToUsers photo:string

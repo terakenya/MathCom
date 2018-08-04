@@ -3,7 +3,7 @@
   .userpage-container
     .userpage-sidebar
       .userpage-icon-container
-        = image_tag 'samplehaibara.png',class:"userpage-icon"
+        = image_tag 'samplehaibara.png',class:'userpage-icon'
       .userpage-userinfo
         .userpage-username
           aritomi
@@ -16,17 +16,20 @@
         .userpage-userdata-container
           aritomiさんのデータ
       .userpage-userlogs
-        .userpage-userlogs-details
+        %ul.userpage-userlogs-details
           .userpage-userlogs-tabs
-            %a.home-tab{:href => "#view1"} 質問した投稿
+            %li
+              %a.home-tab{href: '#view1'} 質問した投稿
           .userpage-userlogs-tabs
-            %a.magazine-tab{:href => "#view2"} 回答した投稿
+            %li
+              %a.magazine-tab{href: '#view2'} 回答した投稿
           .userpage-userlogs-tabs
-            %a.magazine-tab{:href => "#view2"} いいねした投稿
+            %li
+              %a.magazine-tab{href: '#view3'} いいねした投稿
       #view1.tab-content
-        = render "didquestion"
+        = render "askedQuestion"
       #view2.tab-content
-        = render "didanswer"
+        = render "answered"
       #view3.tab-content
-        = render "didlike"
+        = render "liked"
 = render "articles/footer"
