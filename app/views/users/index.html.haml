@@ -6,11 +6,11 @@
         = image_tag 'samplehaibara.png',class:'userpage-icon'
       .userpage-userinfo
         .userpage-username
-          aritomi
+          = @user.nickname
           .userpage-profile-edit
             プロフィールを編集
         .userpage-userintroduction
-          テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト
+          = @user.pr
     .userpage-mainbody
       .userpage-userdata
         .userpage-userdata-container
