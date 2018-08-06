@@ -99,9 +99,12 @@ margin-top:1px;
   background-color:#f7f9f9;
   border-radius:50px;
   display:none;
-  // opacity:0.5;
   font-size:13px;
 }
+
+::-webkit-input-placeholder {
+   color: #ccc; opacity: 0.8;
+ }
 
 
 
