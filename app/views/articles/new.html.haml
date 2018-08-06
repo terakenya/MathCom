@@ -1,8 +1,14 @@
 = render "header_question"
 
 .articlepage-body-new
-  .box-container
-
-    %input{class: 'question_title',placeholder:'微分 高２',type: "text",id: "searchbox"}
+  .box-container-new
+    .question_title
+      %input{class: 'question_title',placeholder:'タイトルを入力してください',type: "text",id: "searchbox"}
+    .question_option
+      %i.fa-picture-o{id: "faicon"}
+      %i.fa-line-chart{id: "faicon"}
     .question_box
-      %input{placeholder:'微分 高２',type: "text",id: "searchbox"}
+      %textarea{class: 'question_box' ,placeholder:'問題を入力してください',type: "text",id: "searchbox"}
+    .question_image
+= render "footer"
+

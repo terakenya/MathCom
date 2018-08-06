@@ -1,18 +1,28 @@
-.articlepage-body-new{
+.articlepage-body-new {
   width:100%;
   height:100%;
-  background-color: black;
+  .question_title {
+    width:100%;
+    height:50px;
+    margin-bottom: 20px;
+    font-size:30px;
+  }
+  .question_option {
+    width:100%;
+    height: 30px;
+    #faicon {
+      float:right;
+    }
+  }
+  .question_box {
+    width:100%;
+    height:300px;
+    font-size: 20px;
+  }
 }
 
-.question_title{
-  width:100%;
-  height:50px;
-  background-color: green;
-  margin-bottom: 50px;
-}
-
-.question_box{
-  width:100%;
-  height:500px;
-  background-color: blue;
+.box-container-new{
+  padding-top:130px;
+  padding-right:45px;
+  padding-left:45px;
 }
