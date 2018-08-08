@@ -4,7 +4,7 @@
       .sidebar-container
         .question
           =image_tag 'hakase.png',class:"hakase"
-          質問する
+          =link_to '質問する', articles_new_path
         = button_to articles_path,class: 'tag-list',method: 'get',params:{generation: '中学生'} do
           = image_tag 'tanuki.png',class:"wolf"
           中学生数学
