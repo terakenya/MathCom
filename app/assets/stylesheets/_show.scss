@@ -1,0 +1,125 @@
+.show-article-container{
+}
+
+.show-main-body{
+  height:1000px;
+  margin-right:65px;
+  margin-left:65px;
+  background-color:gray;
+}
+
+.show-main-body-container{
+  padding-top:120px;
+  width:100%;
+
+}
+
+ .show-main-article{
+  width:870px;
+  height:500px;
+  float:left;
+}
+// ----------------------------------------
+.show-main-article-title-container{
+  width:870px;
+  height:100px;
+  border: 2px solid #526182;
+  border-radius:2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 0 1px rgba(0,0,0,0.35);
+  background-color: white;
+
+}
+
+.show-main-article-title{
+  font-size:23px;
+  padding-left:56px;
+  font-weight: bold;
+}
+
+.show-main-user-name{
+  font-size:15px;
+  margin-left:60px;
+  margin-top:2px;
+
+}
+
+.show-main-article-time{
+  font-size:10px;
+  margin-left:60px;
+}
+
+.show-main-article-tags-first{
+  font-size:12px;
+  margin-top:5px;
+  margin-left:43px;
+}
+
+.show-main-article-tags{
+  font-size:12px;
+  margin-left:15px;
+  margin-top:3px;
+}
+
+.show-main-article-iconholder{
+  width:30px;
+  height:1px;
+  // background-color:green;
+}
+
+.smile2{
+   margin-top:20px;
+   margin-left:10px;
+   width:37px;
+  height:37px;
+}
+// -------------------------------------------------------
+
+.show-main-article-question-container{
+  width:870px;
+  height:700px;
+  background-color:white;
+  border: 2px solid #526182;
+  border-radius:2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 0 1px rgba(0,0,0,0.35);
+  margin-top:3px;
+}
+
+.show-main-article-question-description-container{
+  padding:0 30px;
+  margin-top:15px;
+}
+
+p.show-main-article-question-description{
+  height:700px;
+   word-break: break-all;
+   font-size:18px;
+   line-height:35px;
+}
+
+
+// ------------------------------------------------------
+.show-main-sidebar{
+  width:280px;
+  height:800px;
+  background-color:green;
+  float:left;
+}
+
+.show-ad-space{
+  width:280px;
+  height:280px;
+  background-color:black;
+  color:white;
+  font-size:30px;
+  text-align: center;
+}
+
+
+// ----------------------------------------------------
+
+.show-main-answers{
+  height:300px;
+    background-color: red;
+  margin-right:65px;
+  margin-left:65px;
+}

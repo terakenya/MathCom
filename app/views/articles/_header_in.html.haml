@@ -8,7 +8,7 @@
         = image_tag 'search.png',class:"searchicon"
         %li.nav-search-word
           探す
-          %input{class: "searchbox",placeholder:'微分 高２',type: "text",id: "searchbox"}
+          %input{class: "searchbox",placeholder:'微分 高２',type: "text",id: "searchbox",autocomplete:"off"}
       %li.nav-post
         =link_to '質問する', new_article_path
       %li.nav-mypage
@@ -24,5 +24,6 @@
           .menu-list
             アカウント設定
           .menu-list
-            ログアウト
+            =link_to destroy_user_session_path(current_user) do
+              ログアウト
 
