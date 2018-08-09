@@ -22,24 +22,42 @@ $(function() {
               `
     return html
   }
+  function appendMore(searchword){
+    var html =`
+              <form class="form_more" method="get" action="/articles">
+                <button class="button_more" type="submit">
+                  もっと見る
+                </button>
+                <input type="hidden" name="keywordSearch" value="${searchword}">
+              </form>
+              `
+    return html
+  }
 
   $("#searchbox").on("keyup", function() {
     var input = $.trim($(this).val());
-    $.ajax({
-      type: 'GET',
-      url: '/articles/search',
-      data: { keyword: input },
-      dataType: 'json'
-    })
-    .done(function(questions) {
+    if(input !=""){
+      $.ajax({
+        type: 'GET',
+        url: '/articles/search',
+        data: { keyword: input },
+        dataType: 'json'
+      })
+      .done(function(questions) {
+        if(questions.length != 0 && input!=false){
+        $(".articles-container").empty();
+        $(".article-pagenate").empty();
+          questions.forEach(function(question){
+            var html = appendQuestion(question);
+            $('.articles-container').append(html);
+          });
+          var html = appendMore(input);
+          $('.article-pagenate').append(html);
+        };
+      })
+    } else {
       $(".articles-container").empty();
-      if(questions.length != 0 && input!=false){
-        questions.forEach(function(question){
-          var html = appendQuestion(question);
-          console.log(html)
-          $('.articles-container').append(html);
-        });
-      };
-    })
+      $(".article-pagenate").empty();
+    }
   })
 })
