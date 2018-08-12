@@ -1,0 +1,29 @@
+.header
+  .header-container
+    %ul
+      %li.header-title
+        = link_to questions_path do
+          Smaths!
+      %li.nav-search-logo
+        = image_tag 'search.png',class:"searchicon"
+        %li.nav-search-word
+          探す
+          %input{class: "searchbox",placeholder:'微分 高２',type: "text",id: "searchbox",autocomplete:"off"}
+      %li.nav-post
+        =link_to '質問する', new_question_path
+      %li.nav-mypage
+        = image_tag "smile.png",class:'smile'
+        .mypage-menu
+          .menu-list
+            =link_to users_path do
+              マイページ
+          .menu-list
+            あなたがした質問
+          .menu-list
+            あなたがした回答
+          .menu-list
+            アカウント設定
+          .menu-list
+            =link_to destroy_user_session_path(current_user) do
+              ログアウト
+

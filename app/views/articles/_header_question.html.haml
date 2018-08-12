@@ -1,0 +1,29 @@
+.header
+  .header-container
+    %ul
+      %li.header-title
+        = link_to articles_path do
+          Smaths!
+      %li.nav-search-logo
+        = image_tag 'search.png',class:"searchicon"
+        %li.nav-search-word
+          探す
+          .searchbox
+            / %input{class: "searchbox",placeholder:'微分 高２',type: "text",id: "searchbox"}
+      %li.nav-post
+
+      %li.nav-mypage
+        = image_tag "smile.png",class:'smile'
+        .mypage-menu
+          .menu-list
+            =link_to users_path do
+              マイページ
+          .menu-list
+            あなたがした質問
+          .menu-list
+            あなたがした回答
+          .menu-list
+            アカウント設定
+          .menu-list
+            ログアウト
+

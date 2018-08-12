@@ -57,3 +57,4 @@ end
 gem 'devise'
 gem 'kaminari'
 gem "font-awesome-rails"
+gem "carrierwave"

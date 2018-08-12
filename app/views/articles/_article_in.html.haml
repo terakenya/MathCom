@@ -1,0 +1,28 @@
+.main
+  .box-container
+    .sidebar
+      .sidebar-container
+        .question
+          =image_tag 'hakase.png',class:"hakase"
+          =link_to '質問する', new_article_path
+        = button_to articles_path,class: 'tag-list',method: 'get',params:{generation: '中学生'} do
+          = image_tag 'tanuki.png',class:"wolf"
+          中学生数学
+        = button_to articles_path,class: 'tag-list',method: 'get',params:{generation: '高校生'} do
+          = image_tag 'wolf.png',class:"wolf"
+          高校生数学
+        .tag-list#university
+          = image_tag 'cow.png',class:"wolf"
+          大学生数学
+    //= render "articles"
+    .articles
+      .articles-container
+        = render partial: 'question', collection: @questions
+      .article-pagenate
+        / %from.button_to{:method => "get", :action => "/articles" }
+        /   %button.tag-list{:type => "submit"}
+        /     もっと見る
+        /   %input{:name => "keywordSearch", :type => "hidden", :value => "searchword"}/
+        / = button_to articles_path,class: 'tag-list',method: 'get',params:{keywordSearch: 'searchword'} do
+        /   もっと見る
+        = paginate(@questions)

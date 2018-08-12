@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20180801045022) do
     t.string   "title",       limit: 255
     t.text     "questions",   limit: 65535
     t.text     "description", limit: 65535
+    t.text     "image",       limit: 65535
     t.string   "generation",  limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
