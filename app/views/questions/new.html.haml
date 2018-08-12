@@ -1,0 +1,27 @@
+= render 'header_question'
+
+.articlepage-body-new
+  .box-container-new
+    = form_for @question do |f|
+      .question_title
+        / = f.text_field :title, class: "question_title", placeholder: 'タイトルを入力してください',autocomplete:'off'
+      .question_option
+        %input{name: 'generation', type: 'radio', value: '中学生'}
+          中学生
+        / = f.radio_button :generation, '中学生'
+        /   中学生
+
+        %input{name: 'generation', type: 'radio', value: '高校生'}
+          高校生
+        %input{name: 'generation', type: 'radio', value: '大学生'}
+          大学生
+        %label.imagebutton{for: 'article_image'}
+          = image_tag 'imageicon.png',class: 'imageicon',id: 'imageicon'
+          %input{type:'file',style:'display:none',id:"article_image"}
+      .question_box
+        %textarea{class: 'question_box' ,placeholder:'質問内容を入力してください(1000文字以内)',type: 'text',id: 'searchbox', autocomplete: 'off'}
+      %img{id:'question_image',style: 'width:280px;height:280px,border:none;'}
+      .question_submit
+        %input{class: 'question_submit_button' ,type: 'submit'}
+= render 'footer'
+

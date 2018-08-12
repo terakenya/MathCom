@@ -2,7 +2,7 @@
   .header-container
     %ul
       %li.header-title
-        = link_to articles_path do
+        = link_to questions_path do
           Smaths!
       %li.nav-search-logo
         = image_tag 'search.png',class:"searchicon"
@@ -10,7 +10,7 @@
           探す
           %input{class: "searchbox",placeholder:'微分 高２',type: "text",id: "searchbox",autocomplete:"off"}
       %li.nav-post
-        =link_to '質問する', new_article_path
+        =link_to '質問する', new_question_path
       %li.nav-mypage
         = image_tag "smile.png",class:'smile'
         .mypage-menu
