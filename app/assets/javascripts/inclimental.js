@@ -39,7 +39,7 @@ $(function() {
     if(input !=""){
       $.ajax({
         type: 'GET',
-        url: '/articles/search',
+        url: '/questions/search',
         data: { keyword: input },
         dataType: 'json'
       })
