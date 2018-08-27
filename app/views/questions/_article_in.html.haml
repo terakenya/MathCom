@@ -3,14 +3,14 @@
     .sidebar
       .sidebar-container
         .question
-          =link_to '質問する', new_article_path
-        = button_to articles_path,class: 'tag-list',method: 'get',params:{generation: '中学生'} do
+          =link_to '質問する', new_question_path
+        = button_to questions_path,class: 'tag-list',method: 'get',params:{generation: '中学生'} do
           = image_tag 'tanuki.png',class:"wolf"
           中学生数学
-        = button_to articles_path,class: 'tag-list',method: 'get',params:{generation: '高校生'} do
+        = button_to questions_path,class: 'tag-list',method: 'get',params:{generation: '高校生'} do
           = image_tag 'wolf.png',class:"wolf"
           高校生数学
-        = button_to articles_path,class: 'tag-list',method: 'get',params:{generation: '大学生'} do
+        = button_to questions_path,class: 'tag-list',method: 'get',params:{generation: '大学生'} do
           = image_tag 'cow.png',class:"wolf"
           大学生数学
     //= render "articles"

@@ -3,9 +3,12 @@ Rails.application.routes.draw do
   root 'questions#index'
   devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'
-    get 'articles/search' => 'articles#search'
   end
-  resources :articles
-  resources :questions
+
+  resources :questions do
+    member do
+      get 'search'
+    end
+  end
   resources :users
 end

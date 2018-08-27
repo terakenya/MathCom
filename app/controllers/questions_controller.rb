@@ -2,9 +2,9 @@ class QuestionsController < ApplicationController
   def index
     if (!params[:keywordSearch])
       if (!params[:generation])
-        @questions = Question.all.page(params[:page]).per(2)
+        @questions = Question.all.page(params[:page]).per(5)
       else
-        @questions = Question.where(generation: params[:generation]).page(params[:page]).per(2)
+        @questions = Question.where(generation: params[:generation]).page(params[:page]).per(5)
       end
     else
       @questions = Question.where('title LIKE(?) or description LIKE(?)', "%#{params[:keywordSearch]}%",
@@ -26,8 +26,7 @@ class QuestionsController < ApplicationController
   end
 
   def search
-    binding.pry
-    @questions = Question.where('title LIKE(?) or description LIKE(?)', "%#{params[:keyword]}%", "%#{params[:keyword]}%").limit(1)
+    @questions = Question.where('title LIKE(?) or description LIKE(?)', "%#{params[:keyword]}%", "%#{params[:keyword]}%").limit(3)
     respond_to do |format|
       format.json
     end
@@ -35,6 +34,6 @@ class QuestionsController < ApplicationController
 
   private
   def question_params
-    params.require(:question).permit(:description, :title, :image, :image_cache, :remove_image)
+    params.require(:question).permit(:description, :title, :generation, :image, :image_cache, :remove_image)
   end
 end

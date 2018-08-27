@@ -36,6 +36,7 @@ $(function() {
 
   $("#searchbox").on("keyup", function() {
     var input = $.trim($(this).val());
+    console.log('aaa')
     if(input !=""){
       $.ajax({
         type: 'GET',
@@ -44,6 +45,7 @@ $(function() {
         dataType: 'json'
       })
       .done(function(questions) {
+        console.log('bbb')
         if(questions.length != 0 && input!=false){
         $(".articles-container").empty();
         $(".article-pagenate").empty();

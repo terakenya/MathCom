@@ -5,10 +5,8 @@ $(function() {
       $('.mypage-menu').not(":animated").fadeToggle(10)
       jadge = true
     } else if($(event.target).closest('.smile').length && jadge == true){
-      console.log(jadge)
       $('.mypage-menu').not(":animated").fadeToggle(10)
       jadge = false
-      console.log(jadge)
     }
   });
 });
