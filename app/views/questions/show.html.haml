@@ -7,14 +7,15 @@
           .show-main-article-iconholder
             =image_tag 'smile2.png',class:"smile2"
           .show-main-user-name
-            Aritomiさんの投稿
+            = @question.user.email
+            さんの投稿
           .show-main-article-title
-            得意先の社長に責任を取れと言われました得意先の社長に
+            = @question.title
           .show-main-article-time
-            2018/07/31
+            = @question.created_at
           %ul.show-main-article-tags
             %li.show-main-article-tags-first
-              中学数学
+              = @question.generation
             %li.show-main-article-tags
               三角関数
             %li.show-main-article-tags
@@ -22,8 +23,7 @@
         .show-main-article-question-container
           .show-main-article-question-description-container
             %p.show-main-article-question-description
-              与えられた方程式から、x=2を一つの解として持つことが分かるので、二次方程式 x^2 + 2x + 2 - a = 0 が、(i) x = 2 でない重解を持つまたは(ii) 異なる二つの実数解を持ち、その一方が x = 2となればよい。
-              与えられた方程式から、x=2を一つの解として持つことが分かるので、二次方程式 x^2 + 2x + 2 - a = 0 が、(i) x = 2 でない重解を持つまたは(ii) 異なる二つの実数解を持ち、その一方が x = 2となればよい。s与えられた方程式から、x=2を一つの解として持つことが分かるので、二次方程式 x^2 + 2x + 2 - a = 0 が、(i) x = 2 でない重解を持つまたは(ii) 異なる二つの実数解を持ち、その一方が x = 2となればよい。
+              = @question.description
       .show-main-sidebar
         .show-ad-space
           ADspace

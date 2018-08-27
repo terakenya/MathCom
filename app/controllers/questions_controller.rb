@@ -18,11 +18,13 @@ class QuestionsController < ApplicationController
 
   def create
     @question = Question.new(question_params)
+
     @question.save
     redirect_to (@question)
   end
 
   def show
+    @question = Question.includes(:user).find(params[:id])
   end
 
   def search
@@ -34,6 +36,6 @@ class QuestionsController < ApplicationController
 
   private
   def question_params
-    params.require(:question).permit(:description, :title, :generation, :image, :image_cache, :remove_image)
+    params.require(:question).permit(:description, :title, :generation, :image, :image_cache, :remove_image).merge(user_id: current_user.id)
   end
 end
