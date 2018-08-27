@@ -6,6 +6,7 @@ class CreateQuestions < ActiveRecord::Migration
       t.text :description
       t.text :image
       t.string :generation
+      t.references :user, foreign_key: true
       t.timestamps
     end
   end
