@@ -58,3 +58,4 @@ gem 'devise'
 gem 'kaminari'
 gem "font-awesome-rails"
 gem "carrierwave"
+gem 'acts-as-taggable-on', '~> 4.0'

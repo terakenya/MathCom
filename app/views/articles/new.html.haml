@@ -12,6 +12,10 @@
         高校生
         = f.radio_button :generation, '大学生'
         大学生
+        = f.label :user, :tag_list
+          あああ
+        / = f.text_field :tag_list, value: @user.tag_list.join(','), class: "form-control"
+
         =f.label :image, class: "imagebutton" do
           = f.file_field :image, class: 'imageform', style: 'display:none'
           = image_tag 'imageicon.png',class: 'imageicon',id: 'imageicon'

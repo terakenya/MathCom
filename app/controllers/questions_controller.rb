@@ -18,16 +18,16 @@ class QuestionsController < ApplicationController
 
   def create
     @question = Question.new(question_params)
-
     @question.save
     redirect_to (@question)
   end
 
   def show
-    @question = Question.includes(:user).find(params[:id])
+    @question = Question.find(params[:id])
   end
 
   def search
+    binding.pry
     @questions = Question.where('title LIKE(?) or description LIKE(?)', "%#{params[:keyword]}%", "%#{params[:keyword]}%").limit(3)
     respond_to do |format|
       format.json
@@ -36,6 +36,6 @@ class QuestionsController < ApplicationController
 
   private
   def question_params
-    params.require(:question).permit(:description, :title, :generation, :image, :image_cache, :remove_image).merge(user_id: current_user.id)
+    params.require(:question).permit(:description, :title, :generation, :image, :image_cache, :remove_image, :tag_list).merge(user_id: current_user.id)
   end
 end

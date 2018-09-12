@@ -16,10 +16,9 @@
           %ul.show-main-article-tags
             %li.show-main-article-tags-first
               = @question.generation
-            %li.show-main-article-tags
-              三角関数
-            %li.show-main-article-tags
-              微分
+            - @question.tag_list.each do |tag|
+              %li.show-main-article-tags
+                = tag
         .show-main-article-question-container
           .show-main-article-question-description-container
             %p.show-main-article-question-description

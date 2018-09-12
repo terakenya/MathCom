@@ -36,8 +36,8 @@ $(function() {
 
   $("#searchbox").on("keyup", function() {
     var input = $.trim($(this).val());
-    console.log('aaa')
     if(input !=""){
+      console.log("iii")
       $.ajax({
         type: 'GET',
         url: '/questions/search',
