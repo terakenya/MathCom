@@ -1,0 +1,14 @@
+- if article.like_user(current_user.id)
+  = button_to article_like_path(@article.likes, article_id: article.id), method: :delete, id: "like-button", remote: true do
+    .check_icon
+      %i.fas.fa-check.fa-2x
+      %a.likeCount
+        %span
+          = article.likes.count
+- else
+  = button_to article_likes_path(article), id: "like-button", remote: true do
+    .thumbs
+      %i.fas.fa-thumbs-up.fa-2x
+      %a.likeCount
+        %span
+          = article.likes.count
