@@ -4,15 +4,8 @@ class UsersController < ApplicationController
   def index
     @user = User.find(current_user)
   end
-end
 
 
-
-class UsersController < ApplicationController
-
-  layout "main"
-
-  before_action :move_to_session, except: :index
 
   def show
     @user = User.find(params[:id])
