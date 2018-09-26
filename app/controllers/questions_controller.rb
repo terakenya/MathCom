@@ -6,10 +6,7 @@ class QuestionsController < ApplicationController
       else
         @questions = Question.where(generation: params[:generation]).page(params[:page]).per(5)
       end
-    else
-      @questions = Question.where('title LIKE(?) or description LIKE(?)', "%#{params[:keywordSearch]}%",
-       "%#{params[:keywordSearch]}%").page(params[:page]).per(2)
-    end
+    
   end
 
   def new
